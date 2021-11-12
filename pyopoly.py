@@ -1,9 +1,7 @@
 """
 File: pyopoly.py
-Auther: Gilbert Ijoma
+Gilbert Ijoma
 Date: 10/21/20
-Section: 53
-E-mail: gijoma1@umbc.edu
 Description: A 2 player simplified version of monopoly game
 """
 from sys import argv
@@ -407,7 +405,7 @@ def play_game(starting_money,pass_go_money,board_file):
             t = take_turn('player2',icons,s,t)
 
             if boardInfo['Funds2'] >= BANKRUPT:
-                Done = "Rip to the woo"
+                
 
                 pass_go_position1_player2 = boardInfo['board_position2']
         
@@ -423,7 +421,7 @@ def play_game(starting_money,pass_go_money,board_file):
                     t = take_turn('player1',icons,s,t)
 
                     if boardInfo['Funds1'] >= BANKRUPT:
-                        Done = "Rip to the woo"
+                        
 
                         pass_go_position2_player1 = boardInfo['board_position1']
             
@@ -438,7 +436,7 @@ def play_game(starting_money,pass_go_money,board_file):
                             t = take_turn('player2',icons,s,t)
 
                             if boardInfo['Funds2'] >= BANKRUPT:
-                                Done = "Rip to the woo"
+                                
 
                                 pass_go_position2_player2 = boardInfo['board_position2']
         
